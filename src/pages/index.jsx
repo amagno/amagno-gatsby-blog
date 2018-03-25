@@ -3,8 +3,9 @@ import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 
+import Header from '../components/Header'
+import Post from '../components/Post'
 import Bio from '../components/Bio'
-import { rhythm } from '../utils/typography'
 
 class BlogIndex extends React.Component {
   render() {
@@ -14,23 +15,23 @@ class BlogIndex extends React.Component {
     return (
       <div>
         <Helmet title={siteTitle} />
-        <Bio />
-        {posts.map(({ node }) => {
+        <Header />
+        {posts.map(({ node }, index) => {
+          console.log(node)
           const title = get(node, 'frontmatter.title') || node.fields.slug
           return (
-            <div key={node.fields.slug}>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-            </div>
+            <Link
+              style={{ boxShadow: 0 }}
+              className="db ph3 ph0-l no-underline black dim" 
+              to={node.fields.slug} key={node.fields.slug}
+            >
+              <Post 
+                title={node.frontmatter.title}
+                date={node.frontmatter.date}
+                content={node.excerpt} 
+                end={(index + 1) === posts.length}
+                />
+            </Link>
           )
         })}
       </div>

@@ -5,6 +5,7 @@ import { Container } from 'react-responsive-grid'
 import 'tachyons';
 import './index.css';
 import Footer from '../components/Footer';
+import Header from '../components/Header'
 import Helmet from 'react-helmet'
 
 class Template extends React.Component {
@@ -17,13 +18,13 @@ class Template extends React.Component {
     }
     return (
       <Container className="ph2">
-          {rootPath === location.pathname ? '' : (
-            <Link to="/" className="db mt3 mb3 f6 ttu">
-              ← Home   
-            </Link>
-          )}
-        {console.log(location)}
+        <Header path={location.pathname} />
         {children()}
+        {rootPath === location.pathname ? '' : (
+          <Link to="/" className="db mt3 mb3 f6 ttu">
+            ← Home
+            </Link>
+        )}
         <Footer />
       </Container>
     )

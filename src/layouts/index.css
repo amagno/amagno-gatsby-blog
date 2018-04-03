@@ -1,3 +1,23 @@
 a {
   /* box-shadow: 0 !important; */
 }
+a.nav-link {
+  border: none;
+}
+a.nav-link::after {
+  content: " ";
+  border: 1px solid black;
+  height: 30px;
+  display: block;
+  margin-left: 10px;
+}
+a.nav-link::after:hover {
+  border: 1px solid white;
+}
+
+a.nav-link.active {
+  background-color: #ff6300;
+}
+.breadcrumbs {
+
+}

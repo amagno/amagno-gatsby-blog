@@ -34,7 +34,7 @@
   "devDependencies": {
     "eslint": "^4.19.0",
     "eslint-plugin-react": "^7.7.0",
-    "gh-pages": "^1.1.0",
+    "gh-pages": "^1.2.0",
     "prettier": "^1.11.1"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
@@ -54,7 +54,7 @@
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
     "develop": "gatsby develop",
     "build": "gatsby build",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b master -r \"https://9116985c0620e78752c063ea3b54e4bfad5639db@github.com/amagno/amagno.github.io.git\"",
     "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"
   }
 }

@@ -4,29 +4,29 @@ import React from 'react'
 import 'typeface-montserrat'
 import 'typeface-merriweather'
 
-import profilePic from './profile-pic.jpg'
+import profilePic from './profile-pic.png'
 import { rhythm } from '../utils/typography'
 
 class Bio extends React.Component {
   render() {
     return (
-      <div className="mt3 flex flex-row">
+      <div className="mt3 flex flex-row items-center">
         <img
           src={profilePic}
-          alt={`Kyle Mathews`}
+          alt={`Alexandre Magno Monteiro`}
           style={{
             marginRight: rhythm(1 / 2),
             marginBottom: 0,
             width: rhythm(2),
             height: rhythm(2),
+            borderRadius: 50
           }}
         />
-        <p className="gray">
-          Written by <strong>Kyle Mathews</strong> who lives and works in San
-          Francisco building useful things.{' '}
-          <a href="https://twitter.com/kylemathews">
+        <p className="gray mt4">
+          Written by <strong>Alexandre Magno Monteiro</strong>{' '}
+          {/* <a href="https://twitter.com/kylemathews">
             You should follow him on Twitter
-          </a>
+          </a> */}
         </p>
       </div>
     )

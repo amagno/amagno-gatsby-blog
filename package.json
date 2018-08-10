@@ -59,7 +59,7 @@
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
     "develop": "gatsby develop",
     "build": "gatsby build",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b master -r \"https://c65700a855d6a91c42dc43a2048a339506f5dbc4@github.com/amagno/amagno.github.io.git\"",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b master -r \"https://7ba9e1df5b7f903ad3e746fd95db3713f24017a2@github.com/amagno/amagno.github.io.git\"",
     "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"
   }
 }

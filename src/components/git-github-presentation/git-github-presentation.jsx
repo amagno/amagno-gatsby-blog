@@ -105,8 +105,6 @@ const Presentation = () => (
     <Deck
         transition={["zoom", "slide"]}
         transitionDuration={500}
-        contentHeight={500}
-        contentWidth={600}
         theme={theme}
         controls={true}>
         <Slide transition={["zoom"]} bgColor="primary">

@@ -23,7 +23,7 @@ class Template extends React.Component {
         {rootPath === location.pathname ? '' : (
           <Link to="/" className="db mt3 mb3 f6 ttu">
             ← Home
-            </Link>
+          </Link>
         )}
         <Footer />
       </Container>

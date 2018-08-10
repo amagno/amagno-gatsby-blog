@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Link from 'gatsby-link';
 // Import typefaces
 import 'typeface-montserrat'
 import 'typeface-merriweather'
@@ -22,12 +22,12 @@ class Bio extends React.Component {
             borderRadius: 50
           }}
         />
-        <p className="gray mt4">
-          Written by <strong>Alexandre Magno Monteiro</strong>{' '}
+        <Link to="/about" className="gray mt2">
+        Written by <strong>Alexandre Magno Monteiro</strong>{' '}
           {/* <a href="https://twitter.com/kylemathews">
             You should follow him on Twitter
           </a> */}
-        </p>
+        </Link>
       </div>
     )
   }

@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Starter Blog',
-    author: 'Kyle Mathews',
-    description: 'A starter blog demonstrating what Gatsby can do.',
-    siteUrl: 'https://gatsbyjs.github.io/gatsby-starter-blog/',
+    title: 'Amagno Blog',
+    author: 'Alexandre Magno Monteiro',
+    description: 'Blog pessoal de Alexandre',
+    siteUrl: 'https://amagno.github.io',
   },
   pathPrefix: '/',
   plugins: [
@@ -30,7 +30,7 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
-          'gatsby-remark-prismjs',
+          // 'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
         ],
@@ -53,5 +53,6 @@ module.exports = {
         pathToConfigModule: 'src/utils/typography',
       },
     },
+    `gatsby-plugin-catch-links`
   ],
 }

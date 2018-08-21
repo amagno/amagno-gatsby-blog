@@ -45,9 +45,9 @@ const Header = ({ path }) => (
   </h1>
     <div className="tc pb3 mt3 ml3-l flex flex-row">
       <Link className={linkClasses('/', path)} to="/">Posts</Link>
-      <Link className={linkClasses('/about', path)} to="/about">Sobre</Link>
-      <Link className={linkClasses('/contact', path)} to="/contact">Contato</Link>
-      <a className="link near-black hover-orange db h2 w2 ml3" href="https://github.com/mrmrs" title="GitHub">
+      <Link className={linkClasses('/about', path)} to="/about/">Sobre</Link>
+      <Link className={linkClasses('/contact', path)} to="/contact/">Contato</Link>
+      <a className="link near-black hover-orange db h2 w2 ml3" href="https://github.com/amagno" title="GitHub Alexandre Magno">
         <GithubIcon />
       </a>
     </div>

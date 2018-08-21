@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Amagno Blog',
+    title: 'Alexandre Magno Blog',
     author: 'Alexandre Magno Monteiro',
-    description: 'Blog pessoal de Alexandre',
+    description: 'Blog pessoal do Alexandre Magno Monteiro, React, Gatsby, C#, Csharp, Node, Javascript',
     siteUrl: 'https://amagno.github.io',
   },
   pathPrefix: '/',
